@@ -22,5 +22,20 @@
                 <key key="vlr:inscription_date" value="1990-04-17"/>
             </item>
         </group>
+        
+        <group name="Surveillance">
+            <item icon="presets/sightseeing/museum.svg" name="Flock Raven" type="node">
+                <label text="RPD Flock Raven"/>
+                <key key="man_made" value="surveillance"/>
+                <key key="surveillance:type" value="gunshot_detector"/>
+                <key key="surveillance" value="public"/>
+                <key key="manufacturer" value="Flock Safety"/>
+                <key key="manufacturer:wikidata" value="Q108485435"/>
+                <key key="model" value="Flock Raven"/>
+                <key key="model:wikidata" value="Q139095596"/>
+                <key key="operator" value="Richmond Police Department"/>
+                <key key="operator:wikidata" value="Q7330945"/>
+            </item>
+        </group>
     </group>
 </presets>
