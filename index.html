@@ -1,116 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>MapRVA JOSM Preset</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
-                * { margin: 0; padding: 0; box-sizing: border-box; }
-
-                    body {
-                          font-family: 'DM Sans', system-ui, sans-serif;
-                                min-height: 100vh;
-                                      display: flex;
-                                            align-items: center;
-                                                  justify-content: center;
-                                                        background: #f5f5f0;
-                                                              color: #1a1a1a;
-                                                                    padding: 2rem;
-                                                                        }
-
-                                                                            main {
-                                                                                  max-width: 540px;
-                                                                                        width: 100%;
-                                                                                            }
-
-                                                                                                h1 {
-                                                                                                      font-size: 2rem;
-                                                                                                            font-weight: 700;
-                                                                                                                  letter-spacing: -0.02em;
-                                                                                                                        margin-bottom: 0.5rem;
-                                                                                                                            }
-
-                                                                                                                                p.subtitle {
-                                                                                                                                      color: #666;
-                                                                                                                                            margin-bottom: 2rem;
-                                                                                                                                                  line-height: 1.5;
-                                                                                                                                                      }
-
-                                                                                                                                                          .preset-url {
-                                                                                                                                                                background: #fff;
-                                                                                                                                                                      border: 1px solid #ddd;
-                                                                                                                                                                            border-radius: 8px;
-                                                                                                                                                                                  padding: 1rem 1.25rem;
-                                                                                                                                                                                        display: flex;
-                                                                                                                                                                                              align-items: center;
-                                                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                                                          gap: 1rem;
-                                                                                                                                                                                                                transition: border-color 0.15s;
-                                                                                                                                                                                                                    }
-
-                                                                                                                                                                                                                        .preset-url:hover { border-color: #999; }
-
-                                                                                                                                                                                                                            .preset-url code {
-                                                                                                                                                                                                                                  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-                                                                                                                                                                                                                                        font-size: 0.95rem;
-                                                                                                                                                                                                                                              color: #2d6a4f;
-                                                                                                                                                                                                                                                    word-break: break-all;
-                                                                                                                                                                                                                                                          user-select: all;
-                                                                                                                                                                                                                                                              }
-
-                                                                                                                                                                                                                                                                  .copy-btn {
-                                                                                                                                                                                                                                                                        background: #1a1a1a;
-                                                                                                                                                                                                                                                                              color: #fff;
-                                                                                                                                                                                                                                                                                    border: none;
-                                                                                                                                                                                                                                                                                          border-radius: 6px;
-                                                                                                                                                                                                                                                                                                padding: 0.5rem 1rem;
-                                                                                                                                                                                                                                                                                                      font-family: inherit;
-                                                                                                                                                                                                                                                                                                            font-size: 0.85rem;
-                                                                                                                                                                                                                                                                                                                  font-weight: 500;
-                                                                                                                                                                                                                                                                                                                        cursor: pointer;
-                                                                                                                                                                                                                                                                                                                              white-space: nowrap;
-                                                                                                                                                                                                                                                                                                                                    transition: background 0.15s;
-                                                                                                                                                                                                                                                                                                                                        }
-
-                                                                                                                                                                                                                                                                                                                                            .copy-btn:hover { background: #333; }
-                                                                                                                                                                                                                                                                                                                                                .copy-btn:active { background: #555; }
-
-                                                                                                                                                                                                                                                                                                                                                    .instructions {
-                                                                                                                                                                                                                                                                                                                                                          margin-top: 1.5rem;
-                                                                                                                                                                                                                                                                                                                                                                font-size: 0.85rem;
-                                                                                                                                                                                                                                                                                                                                                                      color: #888;
-                                                                                                                                                                                                                                                                                                                                                                            line-height: 1.6;
-                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                  </style>
-                                                                                                                                                                                                                                                                                                                                                                                  </head>
-                                                                                                                                                                                                                                                                                                                                                                                  <body>
-                                                                                                                                                                                                                                                                                                                                                                                    <main>
-                                                                                                                                                                                                                                                                                                                                                                                        <h1>MapRVA JOSM Preset</h1>
-                                                                                                                                                                                                                                                                                                                                                                                            <p class="subtitle">Add this preset URL in JOSM under<br>
-                                                                                                                                                                                                                                                                                                                                                                                                  <strong>Preferences → Tagging Presets</strong>
-                                                                                                                                                                                                                                                                                                                                                                                                Hit the plus sign, and paste the URL in.</p>
-
-                                                                                                                                                                                                                                                                                                                                                                                                      <div class="preset-url">
-                                                                                                                                                                                                                                                                                                                                                                                                            <code id="url">https://josm.maprva.org/preset.xml</code>
-                                                                                                                                                                                                                                                                                                                                                                                                                  <button class="copy-btn" onclick="copyUrl()">Copy</button>
-                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                          <p class="instructions">
-                                                                                                                                                                                                                                                                                                                                                                                                                                Click the URL to select it, or hit <strong>Copy</strong> to send it to your clipboard.
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                      </main>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                            function copyUrl() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  const url = document.getElementById('url').textContent;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        navigator.clipboard.writeText(url).then(() => {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                const btn = document.querySelector('.copy-btn');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn.textContent = 'Copied!';
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                setTimeout(() => btn.textContent = 'Copy', 1500);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      });
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Install the MapRVA tagging preset in JOSM.">
+    <title>MapRVA JOSM Preset</title>
+    <link rel="shortcut icon" href="https://maprva.org/img/logo-mono.svg" type="image/x-icon" />
+    <style>
+      html {
+        height: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      body {
+        height: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+      }
+      main {
+        max-width: 100%;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      a, a:visited, a:hover {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      h1 img, h1 svg {
+        height: 2em;
+        vertical-align: middle;
+      }
+      section {
+        margin: 1em 0;
+      }
+      mark {
+        background: rgba(127,127,127,0.3);
+        border-radius: .3em;
+        padding: .25em .5em;
+        display: inline-block;
+        color: inherit;
+        margin: 0.1em;
+      }
+      .preset-url {
+        background: rgba(127,127,127,0.3);
+        border-radius: .3em;
+        padding: 1em;
+        margin: 1em auto;
+        width: fit-content;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+      }
+      .preset-url code {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+        user-select: all;
+        min-width: 0;
+      }
+      .preset-url a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+        white-space: nowrap;
+      }
+      .preset-url a svg {
+        height: 1em;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <img alt="icon" src="https://maprva.org/img/logo-mono.svg">
+        MapRVA JOSM Preset
+      </h1>
+      <section>
+        Add this preset URL in JOSM under
+        <mark>Preferences</mark> →
+        <mark>Tagging Presets</mark>.
+        Hit the plus sign, and paste the URL in.
+      </section>
+      <div class="preset-url">
+        <code id="url">https://josm.maprva.org/preset.xml</code>
+        <a id="copy" title="copy to clipboard" href="javascript:void(0)" onclick="copyUrl()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M15.988 3.012A2.25 2.25 0 0 1 18 5.25v6.5A2.25 2.25 0 0 1 15.75 14H13.5V7A2.5 2.5 0 0 0 11 4.5H8.128a2.252 2.252 0 0 1 1.884-1.488A2.25 2.25 0 0 1 12.25 1h1.5a2.25 2.25 0 0 1 2.238 2.012ZM11.5 3.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v.25h-3v-.25Z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7Zm2 3.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm0 3.5a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+          <span id="copy-label">Copy</span>
+        </a>
+      </div>
+      <section>
+        Click the URL to select it, or hit <strong>Copy</strong> to send it to your clipboard.
+      </section>
+    </main>
+    <script>
+      function copyUrl() {
+        const url = document.getElementById('url').textContent;
+        navigator.clipboard.writeText(url).then(() => {
+          const label = document.getElementById('copy-label');
+          label.textContent = 'Copied!';
+          setTimeout(() => label.textContent = 'Copy', 1500);
+        });
+      }
+    </script>
+  </body>
+</html>
