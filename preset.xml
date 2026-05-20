@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="" description="" shortdescription="" version="">
+    <group name="Richmond" icon="https://github.com/MapRVA/maprva.org/blob/0f190d96a7b9088dbdaf82ba21de1ce37e9d4d95/public/img/logo.svg">
+        <group name="Historic Districts">
+            <item icon="presets/sightseeing/museum.svg" name="St Johns" type="closedway">
+                <label text="St Johns"/>
+                <text default="" key="name" text="Name"/>
+                <text default="" key="wikidata" text="Wikidata"/>
+                <text default="" key="start_date" text="Start date"/>
+                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,industrial,church"/>
+                <combo key="roof:shape" text="Roof Shape" values="hipped,flat,gabled,mansard,skillion"/>
+                <combo key="building:material" text="Material" values="wood,brick,stone"/>
+                <combo key="building:architecture" text="Architecture" values="federal,italianate,greek_revival,colonial_revival,queen_anne"/>
+                <key key="heritage" value="2"/>
+                <key key="heritage:operator" value="nrhp"/>
+                <key key="heritage:website" value="https://npgallery.nps.gov/AssetDetail/NRIS/90002097"/>
+                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0192/"/>
+                <key key="historic" value="heritage"/>
+                <key key="nrhp:inscription_date" value="1991-01-17"/>
+                <key key="ref:US-VA:vlr" value="127-0192"/>
+                <key key="ref:nrhp" value="90002097"/>
+                <key key="vlr:inscription_date" value="1990-04-17"/>
+            </item>
+        </group>
+        
+        <group name="Surveillance">
+            <item icon="presets/sightseeing/museum.svg" name="Flock Raven" type="node">
+                <label text="RPD Flock Raven"/>
+                <key key="man_made" value="surveillance"/>
+                <key key="surveillance:type" value="gunshot_detector"/>
+                <key key="surveillance" value="public"/>
+                <key key="manufacturer" value="Flock Safety"/>
+                <key key="manufacturer:wikidata" value="Q108485435"/>
+                <key key="model" value="Flock Raven"/>
+                <key key="model:wikidata" value="Q139095596"/>
+                <key key="operator" value="Richmond Police Department"/>
+                <key key="operator:wikidata" value="Q7330945"/>
+            </item>
+        </group>
+    </group>
+</presets>

@@ -1,41 +1,116 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="" description="" shortdescription="" version="">
-    <group name="Richmond" icon="https://github.com/MapRVA/maprva.org/blob/0f190d96a7b9088dbdaf82ba21de1ce37e9d4d95/public/img/logo.svg">
-        <group name="Historic Districts">
-            <item icon="presets/sightseeing/museum.svg" name="St Johns" type="closedway">
-                <label text="St Johns"/>
-                <text default="" key="name" text="Name"/>
-                <text default="" key="wikidata" text="Wikidata"/>
-                <text default="" key="start_date" text="Start date"/>
-                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,industrial,church"/>
-                <combo key="roof:shape" text="Roof Shape" values="hipped,flat,gabled,mansard,skillion"/>
-                <combo key="building:material" text="Material" values="wood,brick,stone"/>
-                <combo key="building:architecture" text="Architecture" values="federal,italianate,greek_revival,colonial_revival,queen_anne"/>
-                <key key="heritage" value="2"/>
-                <key key="heritage:operator" value="nrhp"/>
-                <key key="heritage:website" value="https://npgallery.nps.gov/AssetDetail/NRIS/90002097"/>
-                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0192/"/>
-                <key key="historic" value="heritage"/>
-                <key key="nrhp:inscription_date" value="1991-01-17"/>
-                <key key="ref:US-VA:vlr" value="127-0192"/>
-                <key key="ref:nrhp" value="90002097"/>
-                <key key="vlr:inscription_date" value="1990-04-17"/>
-            </item>
-        </group>
-        
-        <group name="Surveillance">
-            <item icon="presets/sightseeing/museum.svg" name="Flock Raven" type="node">
-                <label text="RPD Flock Raven"/>
-                <key key="man_made" value="surveillance"/>
-                <key key="surveillance:type" value="gunshot_detector"/>
-                <key key="surveillance" value="public"/>
-                <key key="manufacturer" value="Flock Safety"/>
-                <key key="manufacturer:wikidata" value="Q108485435"/>
-                <key key="model" value="Flock Raven"/>
-                <key key="model:wikidata" value="Q139095596"/>
-                <key key="operator" value="Richmond Police Department"/>
-                <key key="operator:wikidata" value="Q7330945"/>
-            </item>
-        </group>
-    </group>
-</presets>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MapRVA JOSM Preset</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+
+                    body {
+                          font-family: 'DM Sans', system-ui, sans-serif;
+                                min-height: 100vh;
+                                      display: flex;
+                                            align-items: center;
+                                                  justify-content: center;
+                                                        background: #f5f5f0;
+                                                              color: #1a1a1a;
+                                                                    padding: 2rem;
+                                                                        }
+
+                                                                            main {
+                                                                                  max-width: 540px;
+                                                                                        width: 100%;
+                                                                                            }
+
+                                                                                                h1 {
+                                                                                                      font-size: 2rem;
+                                                                                                            font-weight: 700;
+                                                                                                                  letter-spacing: -0.02em;
+                                                                                                                        margin-bottom: 0.5rem;
+                                                                                                                            }
+
+                                                                                                                                p.subtitle {
+                                                                                                                                      color: #666;
+                                                                                                                                            margin-bottom: 2rem;
+                                                                                                                                                  line-height: 1.5;
+                                                                                                                                                      }
+
+                                                                                                                                                          .preset-url {
+                                                                                                                                                                background: #fff;
+                                                                                                                                                                      border: 1px solid #ddd;
+                                                                                                                                                                            border-radius: 8px;
+                                                                                                                                                                                  padding: 1rem 1.25rem;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                              align-items: center;
+                                                                                                                                                                                                    justify-content: space-between;
+                                                                                                                                                                                                          gap: 1rem;
+                                                                                                                                                                                                                transition: border-color 0.15s;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                        .preset-url:hover { border-color: #999; }
+
+                                                                                                                                                                                                                            .preset-url code {
+                                                                                                                                                                                                                                  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+                                                                                                                                                                                                                                        font-size: 0.95rem;
+                                                                                                                                                                                                                                              color: #2d6a4f;
+                                                                                                                                                                                                                                                    word-break: break-all;
+                                                                                                                                                                                                                                                          user-select: all;
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                  .copy-btn {
+                                                                                                                                                                                                                                                                        background: #1a1a1a;
+                                                                                                                                                                                                                                                                              color: #fff;
+                                                                                                                                                                                                                                                                                    border: none;
+                                                                                                                                                                                                                                                                                          border-radius: 6px;
+                                                                                                                                                                                                                                                                                                padding: 0.5rem 1rem;
+                                                                                                                                                                                                                                                                                                      font-family: inherit;
+                                                                                                                                                                                                                                                                                                            font-size: 0.85rem;
+                                                                                                                                                                                                                                                                                                                  font-weight: 500;
+                                                                                                                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                                                                                                                              white-space: nowrap;
+                                                                                                                                                                                                                                                                                                                                    transition: background 0.15s;
+                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                            .copy-btn:hover { background: #333; }
+                                                                                                                                                                                                                                                                                                                                                .copy-btn:active { background: #555; }
+
+                                                                                                                                                                                                                                                                                                                                                    .instructions {
+                                                                                                                                                                                                                                                                                                                                                          margin-top: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                                                font-size: 0.85rem;
+                                                                                                                                                                                                                                                                                                                                                                      color: #888;
+                                                                                                                                                                                                                                                                                                                                                                            line-height: 1.6;
+                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                  </style>
+                                                                                                                                                                                                                                                                                                                                                                                  </head>
+                                                                                                                                                                                                                                                                                                                                                                                  <body>
+                                                                                                                                                                                                                                                                                                                                                                                    <main>
+                                                                                                                                                                                                                                                                                                                                                                                        <h1>MapRVA JOSM Preset</h1>
+                                                                                                                                                                                                                                                                                                                                                                                            <p class="subtitle">Add this preset URL in JOSM under<br>
+                                                                                                                                                                                                                                                                                                                                                                                                  <strong>Preferences → Tagging Presets</strong>
+                                                                                                                                                                                                                                                                                                                                                                                                Hit the plus sign, and paste the URL in.</p>
+
+                                                                                                                                                                                                                                                                                                                                                                                                      <div class="preset-url">
+                                                                                                                                                                                                                                                                                                                                                                                                            <code id="url">https://josm.maprva.org/preset.xml</code>
+                                                                                                                                                                                                                                                                                                                                                                                                                  <button class="copy-btn" onclick="copyUrl()">Copy</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                          <p class="instructions">
+                                                                                                                                                                                                                                                                                                                                                                                                                                Click the URL to select it, or hit <strong>Copy</strong> to send it to your clipboard.
+                                                                                                                                                                                                                                                                                                                                                                                                                                    </p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                      </main>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                            function copyUrl() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  const url = document.getElementById('url').textContent;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        navigator.clipboard.writeText(url).then(() => {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                const btn = document.querySelector('.copy-btn');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        btn.textContent = 'Copied!';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                setTimeout(() => btn.textContent = 'Copy', 1500);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </html>
