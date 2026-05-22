@@ -7,19 +7,40 @@
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
                 <text default="" key="start_date" text="Start date"/>
-                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,industrial,church"/>
+                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,industrial,church" default="house"/>
                 <combo key="roof:shape" text="Roof Shape" values="hipped,flat,gabled,mansard,skillion"/>
-                <combo key="building:material" text="Material" values="wood,brick,stone"/>
+                <combo key="building:material" text="Material" values="wood,brick,stone,plaster"/>
                 <combo key="building:architecture" text="Architecture" values="federal,italianate,greek_revival,colonial_revival,queen_anne"/>
+                <text default="" key="house" text="House type"/>
                 <key key="heritage" value="2"/>
                 <key key="heritage:operator" value="nrhp"/>
                 <key key="heritage:website" value="https://npgallery.nps.gov/AssetDetail/NRIS/90002097"/>
-                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0192/"/>
+                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0192"/>
                 <key key="historic" value="heritage"/>
                 <key key="nrhp:inscription_date" value="1991-01-17"/>
                 <key key="ref:US-VA:vlr" value="127-0192"/>
                 <key key="ref:nrhp" value="90002097"/>
                 <key key="vlr:inscription_date" value="1990-04-17"/>
+            </item>
+
+            <item icon="presets/sightseeing/museum.svg" name="Oakwood-Chimbo" type="closedway">
+                <label text="Oakwood-Chimbo"/>
+                <text default="" key="name" text="Name"/>
+                <text default="" key="wikidata" text="Wikidata"/>
+                <text default="" key="start_date" text="Start date"/>
+                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,bungalow,industrial,church" default="house"/>
+                <combo key="building:material" text="Material" values="wood,brick,stone"/>
+                <combo key="building:architecture" text="Architecture" values="late_19th_and_20th_century_revivals,late_19th_and_early_20th_century_american_movements,colonial_revival,greek_revival,classical_revival,italianate,late_victorian,queen_anne,art_deco,craftsman,modern_movement,gothic_revival"/>
+                <text default="" key="house" text="House type"/>
+                <key key="heritage" value="2"/>
+                <key key="heritage:operator" value="nrhp"/>
+                <key key="heritage:website" value="https://npgallery.nps.gov/AssetDetail/NRIS/04001372"/>
+                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0821"/>
+                <key key="historic" value="heritage"/>
+                <key key="nrhp:inscription_date" value="2005-03-18"/>
+                <key key="ref:US-VA:vlr" value="127-0821"/>
+                <key key="ref:nrhp" value="04001372"/>
+                <key key="vlr:inscription_date" value="2004-09-08"/>
             </item>
         </group>
         
