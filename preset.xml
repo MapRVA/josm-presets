@@ -27,10 +27,10 @@
                 <label text="Oakwood-Chimbo"/>
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
-                <text default="" key="start_date" text="Start date"/>
                 <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,bungalow,industrial,church" default="house"/>
-                <combo key="building:material" text="Material" values="wood,brick,stone"/>
+                <text default="" key="building:levels" text="Stories"/>
                 <combo key="building:architecture" text="Architecture" values="late_19th_and_20th_century_revivals,late_19th_and_early_20th_century_american_movements,colonial_revival,greek_revival,classical_revival,italianate,late_victorian,queen_anne,art_deco,craftsman,modern_movement,gothic_revival"/>
+                <text default="" key="start_date" text="Start date"/>
                 <text default="" key="house" text="House type"/>
                 <key key="heritage" value="2"/>
                 <key key="heritage:operator" value="nrhp"/>
