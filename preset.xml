@@ -42,6 +42,28 @@
                 <key key="ref:nrhp" value="04001372"/>
                 <key key="vlr:inscription_date" value="2004-09-08"/>
             </item>
+
+            <item icon="presets/sightseeing/museum.svg" name="Church Hill North" type="closedway">
+                <label text="Church Hill North"/>
+                <text default="" key="name" text="Name"/>
+                <text default="" key="wikidata" text="Wikidata"/>
+                <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,bungalow,industrial,church" default="house"/>
+                <text default="" key="start_date" text="Start date"/>
+                <combo key="roof:shape" text="Roof Shape" values="hipped,flat,gabled,mansard,skillion"/>
+                <text default="2" key="building:levels" text="Stories"/>
+                <combo key="building:material" text="Material" values="wood,brick,stone,plaster"/>
+                <combo key="building:architecture" text="Architecture" values="colonial_revival,greek_revival,classical_revival,italianate,late_19th_and_early_20th_century_american_movements,late_victorian,queen_anne,art_deco,craftsman,gothic_revival"/>
+                <text default="" key="house" text="House type"/>
+                <key key="heritage" value="2"/>
+                <key key="heritage:operator" value="nrhp"/>
+                <key key="heritage:website" value="https://npgallery.nps.gov/AssetDetail/NRIS/97000958"/>
+                <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0820"/>
+                <key key="historic" value="heritage"/>
+                <key key="nrhp:inscription_date" value="1997-09-05"/>
+                <key key="ref:US-VA:vlr" value="127-0820"/>
+                <key key="ref:nrhp" value="97000958;00000887"/>
+                <key key="vlr:inscription_date" value="1996-09-18"/>
+            </item>
         </group>
         
         <group name="Surveillance">
