@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="" description="" shortdescription="" version="">
     <group name="Richmond" icon="https://github.com/MapRVA/maprva.org/blob/0f190d96a7b9088dbdaf82ba21de1ce37e9d4d95/public/img/logo.svg">
         <group name="Historic Districts">
-            <item icon="presets/sightseeing/museum.svg" name="St Johns" type="closedway">
+            <item icon="presets/sightseeing/museum.svg" name="St Johns" type="closedway,multipolygon,relation">
                 <label text="St Johns"/>
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
@@ -23,7 +23,7 @@
                 <key key="vlr:inscription_date" value="1990-04-17"/>
             </item>
 
-            <item icon="presets/sightseeing/museum.svg" name="Oakwood-Chimbo" type="closedway">
+            <item icon="presets/sightseeing/museum.svg" name="Oakwood-Chimbo" type="closedway,multipolygon,relation">
                 <label text="Oakwood-Chimbo"/>
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
@@ -43,7 +43,7 @@
                 <key key="vlr:inscription_date" value="2004-09-08"/>
             </item>
 
-            <item icon="presets/sightseeing/museum.svg" name="Church Hill North" type="closedway">
+            <item icon="presets/sightseeing/museum.svg" name="Church Hill North" type="closedway,multipolygon,relation">
                 <label text="Church Hill North"/>
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
