@@ -28,7 +28,7 @@
                 <text default="" key="name" text="Name"/>
                 <text default="" key="wikidata" text="Wikidata"/>
                 <combo key="building" text="Building" values="house,semidetatched_house,terrace,commercial,bungalow,industrial,church" default="house"/>
-                <text default="" key="building:levels" text="Stories"/>
+                <combo default="2" key="building:levels" text="Stories" values="1,2,3,4"/>
                 <combo key="building:architecture" text="Architecture" values="late_19th_and_20th_century_revivals,late_19th_and_early_20th_century_american_movements,colonial_revival,greek_revival,classical_revival,italianate,late_victorian,queen_anne,art_deco,craftsman,modern_movement,gothic_revival"/>
                 <text default="" key="start_date" text="Start date"/>
                 <text default="" key="house" text="House type"/>
@@ -38,7 +38,7 @@
                 <key key="heritage:website:vdhr" value="https://www.dhr.virginia.gov/historic-registers/127-0821"/>
                 <key key="historic" value="heritage"/>
                 <key key="nrhp:inscription_date" value="2005-03-18"/>
-                <key key="ref:US-VA:vlr" value="127-0821"/>
+                <text key="ref:US-VA:vlr" default="127-0821-0"/>
                 <key key="ref:nrhp" value="04001372"/>
                 <key key="vlr:inscription_date" value="2004-09-08"/>
             </item>
